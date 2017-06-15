@@ -5,4 +5,4 @@ const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
-export const AppRoutes = RouterModule.forChild(routes);
+export const AppRoutes = RouterModule.forRoot(routes);
