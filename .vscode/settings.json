@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "html.format.unformatted": "",
+    "html.format.preserveNewLines": false,
+    "html.format.indentInnerHtml": true,
+    "html.suggest.html5": false,
+    "git.confirmSync": false,
+    "typescript.check.tscVersion": false,
+    "workbench.iconTheme": "vs-seti",
+    "html.format.wrapAttributes": "force-aligned",
+    "editor.minimap.enabled": true,
+    "git.ignoreLegacyWarning": true,
+    "editor.formatOnSave": true
+}
