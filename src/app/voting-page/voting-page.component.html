@@ -1,0 +1,36 @@
+<div class="jumbotron"
+     *ngIf="question">
+  <div class="container">
+    <h1>{{ question.description }}</h1>
+    <form action="vote()"
+          method="POST"
+          role="form">
+      <div class="form-group">
+        <label>Choose an option</label>
+        <div class="radio">
+          <label>
+            <input type="radio"
+                   name="option"
+                   value="Options"
+                   checked="checked"> Options 1 </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio"
+                   name="option"
+                   value="Options"
+                   checked="checked"> Options 1 </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio"
+                   name="option"
+                   value="Options"
+                   checked="checked"> Options 1 </label>
+        </div>
+      </div>
+      <button type="submit"
+              class="btn btn-primary btn-lg">vote</button>
+    </form>
+  </div>
+</div>
