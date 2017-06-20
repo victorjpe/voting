@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { QuestionService } from '../service/question/question.service';
 import { question } from '../model/question';
+import { VotingOption } from '../model/voting-option';
 
 @Component({
   selector: 'app-voting-page',
@@ -10,7 +11,6 @@ import { question } from '../model/question';
 })
 export class VotingPageComponent implements OnInit {
 
-  questionId: number;
   question: question;
 
   constructor(
@@ -19,9 +19,8 @@ export class VotingPageComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.params.subscribe((p) => {
-      this.questionId = p['id'];
-      this.questionService.getQuestion(this.questionId).subscribe((response) => {
+    this.route.params.subscribe((params) => {
+      this.questionService.getQuestion(params['id']).subscribe((response) => {
         this.question = response.json();
       });
     });
