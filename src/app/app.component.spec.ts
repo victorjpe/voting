@@ -4,6 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 import { APP_BASE_HREF } from '@angular/common';
+
 import { VotingListComponent } from './voting-list/voting-list.component';
 
 describe('AppComponent', () => {
@@ -18,6 +19,12 @@ describe('AppComponent', () => {
         RouterTestingModule
 
       ],
+
+      imports: [
+        AppRoutes,
+        RouterTestingModule
+      ],
+
       providers: [
         { provide: APP_BASE_HREF, useValue: '/' }
       ]
