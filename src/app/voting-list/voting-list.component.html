@@ -1,0 +1,26 @@
+<div class="page-header">
+  <h1>Topics
+    <small> Find here all the topics avialable for voting!</small>
+  </h1>
+</div>
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>SlNo</th>
+      <th>Topic</th>
+      <th>Vote</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let v of votingList; let i=index">
+      <td>{{i + 1}}</td>
+      <td>{{v.description}}</td>
+      <td>
+        <button type="button"
+                class="btn btn-sm btn-warning">
+          <i class="fa fa-address-card"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

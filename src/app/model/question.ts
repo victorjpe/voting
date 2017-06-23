@@ -1,4 +1,4 @@
-export class question {
+export class Question {
   "isComplete": boolean;
   "endDate": Date;
   "startDate": Date;
