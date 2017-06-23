@@ -5,16 +5,26 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 import { APP_BASE_HREF } from '@angular/common';
 
+import { VotingListComponent } from './voting-list/voting-list.component';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        VotingListComponent
       ],
       imports: [
         AppRoutes,
         RouterTestingModule
+
       ],
+
+      imports: [
+        AppRoutes,
+        RouterTestingModule
+      ],
+
       providers: [
         { provide: APP_BASE_HREF, useValue: '/' }
       ]
@@ -27,9 +37,5 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'app'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app');
-  }));
+
 });

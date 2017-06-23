@@ -10,7 +10,7 @@ describe('Service: Vote', () => {
     });
   });
 
-  it('should ...', inject([VoteService], (service: VoteService) => {
+  it('should be valid object', inject([VoteService], (service: VoteService) => {
     expect(service).toBeTruthy();
   }));
 });
